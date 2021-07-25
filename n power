@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+int power(int n,int p){
+    if(p==0){
+        return 1;
+    }
+    int nx=power(n,p-1);
+    return n*nx;
+    
+    
+    
+}
+
+int main()
+{
+    int p,n;
+    cin>>n>>p;
+    cout<<power(n,p);
+    
+
+    return 0;
+}
